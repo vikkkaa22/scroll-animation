@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.block {
+    margin-top: 300px; /*чтобы был виден скролл*/
+    margin-bottom: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 200px;
+    background: peachpuff;
+    color: palevioletred;
+    animation: appear 4s;
+    animation-timeline: scroll(root block);
+}
+
+.container {
+    width: 1000px;
+    height: 500px;
+    overflow-y: scroll; /*как блок должен себя вести при переполнении*/
+    background: lavender;
+    border: 2px solid rgb(131, 131, 148);
+    margin-top: 1000px;
+    margin: 1000px auto;
+    animation: gradient;
+    animation-timeline: scroll(self block);
+}
+
+
+@keyframes appear /*появление*/ {
+    0%  {
+        background: peachpuff;
+        opacity: 0.1;
+        transform: scale(0.1);
+    }
+    50% {
+        background-color: peachpuff;
+        opacity: 0.5;
+        transform: scale(1.2);
+
+    }
+    100% {
+        background-color: antiquewhite;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes gradient {
+    from {
+        background: lavender;
+    }
+    to {
+        background: rgb(176, 176, 235);
+    }
+}

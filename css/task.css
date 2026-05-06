@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*-------------------task 1------------------------*/
+
+/* html {
+    scroll-behavior: smooth;
+}
+
+header, footer {
+    background: lightseagreen;
+    height: 60px;
+    padding-top: 20px;
+}
+
+.link {
+    margin: 20px;
+}
+
+.block-1 {
+    background: papayawhip;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+}
+
+.block-2 {
+    background: palevioletred;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+}
+
+.block-3 { 
+    background: plum;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+} */
+
+
+
+
+
+
+/*----------------task 2---------------------*/
+
+/* .progressbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+    animation: progressbar 1s linear;
+    animation-timeline: scroll(root block);
+    animation-duration: 2s;
+}
+
+
+@keyframes progressbar {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+} */
+
+
+
+
+/*-------------------task 3--------------------*/
+
+/* .carousel {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    background-color: rgb(235, 250, 255);
+    overflow-x: scroll;
+}
+
+.carousel img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid lightblue;
+    border-radius: 20px;
+    animation: grow ease-in-out;
+    animation-timeline: view(inline 50% 30%);  */
+    /*scroll(nearest inline);*/
+    /* nearest - ближайщий родитель ; inline - горизонтальный скролл*/
+/* }
+
+
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+} */
+
+
+
+
+/*-------------------task 4----------------*/
+
+
+body {
+    min-height: 3000px;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.main-content {
+    padding: 40px;
+}
+
+.box-1, .list, .box-2 {
+    margin-bottom: 50px;
+}
