@@ -12,9 +12,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 500px;
-    height: 200px;
+    height: 0 auto;
     background: peachpuff;
     color: palevioletred;
+    text-align: center;
+    padding: 30px;
     animation: appear 4s;
     animation-timeline: scroll(root block);
 }
@@ -31,8 +33,25 @@
     animation-timeline: scroll(self block);
 }
 
+.block a {
 
-@keyframes appear /*появление*/ {
+    text-decoration: none;
+    color: white;
+    background: palevioletred;
+    padding: 10px 20px;
+    border-radius: 12px;
+    display: inline-block;
+    transition:.3s;
+}
+
+
+.block a:hover {
+    background: rgb(199,78,118);
+    transform: scale(1.1);
+}
+
+
+@keyframes appear {
     0%  {
         background: peachpuff;
         opacity: 0.1;
