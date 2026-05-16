@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.progressbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+    animation: progressbar 1s linear;
+    animation-timeline: scroll(root block);
+    animation-duration: 2s;
+}
+
+
+@keyframes progressbar {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}

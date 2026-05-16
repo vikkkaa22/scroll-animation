@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 3000px;
+}
+
+.header {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    max-width: 100%;
+    color:#ffffff;
+    background-color: rgb(24, 24, 24);
+    height: 100px;
+    animation-name: bright;
+    animation-duration: auto;
+    animation-timeline: scroll(root block);
+    animation-range: 100vh 100%;
+}
+
+main {
+    margin-top: 100px;
+    min-height: 500vh;
+    display: grid;
+    background-color:#838383;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    view-timeline-name: --section-timeline;
+    view-timeline-axis: y;
+    
+}
+
+.section h2 {
+    font-size: 48px;
+    animation: bright;
+    animation-timeline: --section-timeline;
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes bright {
+    0% {
+        opacity: 0.3;
+        color: white;
+        position: fixed;
+    }
+
+    50% {
+        opacity: 1;
+        color: yellow;
+        position: fixed;
+    }
+
+    100% {
+        opacity: 0.7;
+        color: white;
+        position: fixed;
+    }
+}

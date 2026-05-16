@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+header, footer {
+    background: lightseagreen;
+    height: 60px;
+    padding-top: 20px;
+}
+
+.link {
+    margin: 20px;
+}
+
+.block-1 {
+    background: papayawhip;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+}
+
+.block-2 {
+    background: palevioletred;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+}
+
+.block-3 { 
+    background: plum;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+}
